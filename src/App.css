@@ -2,5 +2,43 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+  /* text-align: center; */
+}
+
+.container {
+  width: 1080px;
+  border: 1px solid #fff;
+}
+
+.header {
+  display: flex;
+  background-color: #252b2e;
+  padding: 0px 15px;
+  justify-content: space-between;
+}
+
+.footer {
+  display: flex;
+  position: relative;
+  width: 1080px;
+  padding: 10px 0px;
+  border: 1px solid #fff;
+  justify-content: center;
+  align-items: center;
+}
+
+.question_move_buttons {
+  position: absolute;
+  right: 20px;
+  font-size: 13px;
+  user-select: none;
+}
+
+.question_move_buttons .previous,
+.question_move_buttons .next {
+  cursor: pointer;
+}
+
+.main_section {
+  padding: 10px 15px;
 }
