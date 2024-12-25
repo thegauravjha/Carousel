@@ -1,0 +1,1 @@
+export const API = "https://quiz-questions.free.beeceptor.com/";
