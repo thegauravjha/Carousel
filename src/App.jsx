@@ -10,7 +10,7 @@ function App() {
   const fetchImages = async (imgLimit) => {
     try{
       setLoading(true);
-      const response = await fetch(`https://jsonplaceholder.typicode.com/photos?_limit=${imgLimit}`);
+      const response = await fetch(`https://picsum.photos/v2/list?page=1&limit=${imgLimit}`);
       const data = await response.json()
       setImages(data);
     } catch (e){
@@ -30,9 +30,9 @@ function App() {
       <Carousel 
         images = {images}
         isLoading = {loading}
-        // defaultImage = {1}
-        // imgPerSlide = {}
-        // imageLimit = {}
+        // defaultImage = {3}
+        imgPerSlide = {3}
+        imageLimit = {10}
         // customPrevButton = {}
         // customNextButton = {}
       />
